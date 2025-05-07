@@ -13,3 +13,31 @@ Preguntas:
 2. Implementa un patrón de diseño para que la creación de distintos tipos de comida (pizza, hamburguesa, ensalada) se realice de manera flexible y escalable sin modificar el código existente.
 
 3. Implementa un segundo patrón de diseño en una clase que gestiona todos los pedidos activos no pueda ser instanciada más de una vez y siempre devuelva la misma instancia al ser usada.
+
+Requerimientos de tu clase Main:
+
+- Los nombres y precios de las comidas creadas.
+
+- El total del pedido y su estado antes y después de cambiarlo.
+
+- La lista de pedidos registrados en el sistema (usando la clase centralizada).
+
+- Una verificación de que la instancia del gestor de pedidos es única (debe imprimir true al comparar dos llamadas a getInstancia() o equivalente).
+
+Output ideal:
+
+```
+Comidas creadas:
+- Pizza S/.25.0
+- Ensalada S/.15.0
+- Hamburguesa S/.18.0
+
+Total del pedido: S/.58.0
+Estado inicial: pendiente
+Estado actualizado: en preparación
+
+Pedidos registrados en el sistema:
+- Pedido #1: 3 comidas, estado: en preparación
+
+¿Gestores son iguales? true
+```
